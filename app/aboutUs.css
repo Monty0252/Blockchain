@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+
+
+*{
+  margin: 0;  
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", "Times New Roman","Sans-serif";
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* div {
+  width: 100vw;
+  height: 100vh;
+} */
+
+
+section{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: url("/mainbackground.jpg")no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+header{
+  position: relative;
+  top: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+header .logo{
+  margin-right: auto;
+  cursor: pointer;
+  width: 17%;
+}
+
+header .navigation_bar a{
+  color:rgb(255, 255, 255);
+
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 2px 15px;
+  border-radius: 20px;
+  transition: 0.3s;
+  transition-property: background;
+
+}
+
+header .navigation_bar a:not(:last-child){
+  margin-right:30px;
+}
+
+header .navigation_bar a:hover{
+  background: rgb(71, 71, 71);
+}
+
+
+.content{
+  width: 100%;
+  padding: 78px 0px;
+
+}
+
+.content .logo{
+    height: auto;
+    width: 300px;
+}
+
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;  
+    align-items: center;
+    justify-content: space-around;
+}
+
+.info{
+    width: 550px;
+}
+
+
+
+.info h1{
+    color: white;
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+
+}
+
+.info h5{
+    color:  #aa8179;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+span{
+color: rgb(156, 156, 156);
+}
+
+.info p{
+color:rgb(211, 202, 202);
+letter-spacing: 2px;
+line-height: 28px;
+font-size: 18px;
+margin-bottom: 45px;
+}
+
+
+.content .info-btn{
+  color:rgb(255, 255, 255);
+  background: #292828;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: 0.3s;
+  transition-property: background;
+}
+
+

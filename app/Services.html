@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The Paper Project</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./service.css">
+        <link rel="icon" href="./paper-project-high-resolution-logo-color-on-transparent-background.png">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    </head>
+    <body>
+        <section>
+            <header>
+                <img class = "logo" src="./logo.png" alt="logo">
+                  <div class="navigation_bar">
+                    <a href="/index.html">Home</a>
+                    <a href="/contactUs.html">Contact Us</a>
+                    <a href="/Services.html">Services</a>
+                  </div>
+              </header>
+            <div class="log_container" onload="get_">
+                <div class="form_box">
+                    <div class="button_box">
+                        <div id="btn"></div>
+                        <button type="button" class="t_btn" onclick="login()">Store</button>
+                        <button type="button" class="t_btn" onclick="register()">Retrieve</button>
+                    </div>
+                    <form id="login" class="input_group">
+                        <input type="text" class="input_field" id="username" placeholder="Full Name" required>
+                        <input type="text" class="input_field" id ="document" placeholder="Select Document" required>
+                        <input type="text" id = "unique_code" class="str_input_field" value="Special Key">
+                        <button type="button" id ="Store" class="submit_btn">Store</button>
+                    </form>
+                    <form id="register" class="input_group">
+                        <input type="email" id = "code" class="input_field" placeholder="Please Enter Your Special Key" required>  
+                        <button type="button" id="Retrieve" class="submit_btn">Retrieve</button>
+                    </form>
+                </div>
+    
+            </div>
+
+        </section>
+
+    </body>
+    <script>
+       
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function register(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+
+        function login(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0";
+        
+        
+        document.getElementById("unique_code").value = get_random_key(10);
+        function get_random_key(string_length){
+            var random_string = "";
+            var char = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+            for (var i, i=0; i < string_length; i++){
+                random_string += char.charAt(Math.floor(Math.random() * char.length));
+            }
+            return random_string
+        }
+        
+}
+    </script>
+        <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+        <script src="app.js"></script>
+</html>

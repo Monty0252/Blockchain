@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+
+
+*{
+  margin: 0;  
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", "Times New Roman","Sans-serif";
+
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+
+
+section{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: url("/mainbackground.jpg")no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+header{
+  position: relative;
+  top: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+header .logo{
+  margin-right: auto;
+  cursor: pointer;
+  width: 17%;
+}
+
+header .navigation_bar a{
+  color:rgb(255, 255, 255);
+
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 2px 15px;
+  border-radius: 20px;
+  transition: 0.3s;
+  transition-property: background;
+
+}
+
+header .navigation_bar a:not(:last-child){
+  margin-right:30px;
+}
+
+header .navigation_bar a:hover{
+  background: rgb(71, 71, 71);
+}
+
+
+.content{
+  max-width: 650px;
+  margin: 60px 100px;
+
+}
+
+
+.content .info h2{
+  color: #AFA09D;
+  font-size: 55px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2px;
+  line-height: 60px;
+  margin-bottom: 30px;
+}
+.content .info h2 span{
+  color: #afabaa;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.content .info p{
+  color: azure;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.content .info-btn{
+  color:rgb(255, 255, 255);
+  background: #292828;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: 0.3s;
+  transition-property: background;
+}
+
+.contact{
+    position: relative;
+    /* min-height: 100vh; */
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .contact .content {
+    max-width: 800px;
+    text-align: center;
+    /* position: fixed; top: 200px; */
+    color: white
+  
+  }
+  
+  .contact .content h2{
+    font-size: 36px;
+    font-weight: 500px;
+    color: #ffff;
+  
+  }
+  
+  .contact .content p{
+    font-weight: 300px;
+  }
+  
+  .container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  
+  
+  }
+  .contactInfo p{
+    color: white;
+  }
+  
+  .container .contactInfo .box .icon{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+  
+  
+  }
+  
+  .container .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    flex-direction: column;
+    font-weight: 300px;
+  }
+  
+  .container .contactInfo .box .text h3{
+    font-weight: 500;
+    color: #AFA09D;
+  }
+  
+  .contactForm{
+    width: 40%;
+    padding: 40px;
+  }
+  
+  .contactForm h2{
+    font-size: 30px;
+    color: rgb(153, 151, 151);
+    font-weight: 500px;
+    
+  }
+  
+  .contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .contactForm .inputBox input,
+  .contactForm .inputBox textarea
+  {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border:none;
+    border-bottom: 2px solid rgb(54, 53, 53);
+    outline: none;
+    resize: none;
+    color: rgb(0, 0, 0);
+  
+  
+  }
+  
+  .contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #555;
+  }
+  
+  .contactForm .inputBox input:focus ~ span,
+  .contactForm .inputBox input:valid ~ span,
+  .contactForm .inputBox textarea:focus ~ span,
+  .contactForm .inputBox textarea:valid ~ span{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px)
+  }
+  
+  .contactForm .inputBox input[type="submit"]{
+  color:rgb(255, 255, 255);
+  background: #292828;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: 0.3s;
+  transition-property: background;
+  height: auto;;
+  width:30%;
+  cursor: pointer;
+  
+  }
+
+

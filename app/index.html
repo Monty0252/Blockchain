@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+    <head>
+      <title>The Paper</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="./home.css">
+      <link rel="icon" href="/paper-project-high-resolution-logo-color-on-transparent-background.png">
+      <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&display=swap" rel="stylesheet">
+      <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    </head>
+
+    <body>
+      <section>
+        <header>
+          <img class = "logo" src="./logo.png" alt="logo">
+            <div class="navigation_bar">
+              <a href="/index.html">Home</a>
+              <a href="/contactUs.html">Contact Us</a>
+              <a href="/Services.html">Services</a>
+            </div>
+        </header>
+        <div class="content">
+          <div class="main">
+            <div class="info">
+              <h2>Like Paper <br><span>Be Stored</span></h2>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Dolorum ab earum eum minus dolorem fugiat ratione soluta cum adipisci aliquid? 
+                Voluptates alias officiis quia labore eos cupiditate tenetur. Esse, suscipit!</p>
+                <a href="/aboutUs.html" class="info-btn">More Info</a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <script>
+        gsap.to(".text-wrapper p", {
+        text: "Typewriter effect with GSAP 3",
+        duration: 3,
+        ease: "power1.in",
+        repeat: 1,
+        yoyo: true
+        });
+
+        const ethereumButton = document.querySelector('.enableEthereumButton');
+        const showAccount = document.querySelector('.showAccount');
+        ethereumButton.addEventListener('click', () => {
+            getAccount();
+        });
+        async function getAccount() {
+            const accounts = await
+            ethereum.request({
+                method: 'eth_requestAccounts'
+            });
+            const account = accounts[0];
+            showAccount.innerHTML = account;
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+    </body>
+    
+</html>
